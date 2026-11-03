@@ -1,7 +1,7 @@
-/* Service Worker — دليل فصائل دم قرية شاوة — الإصدار 2026.11.03-1740
+/* Service Worker — دليل فصائل دم قرية شاوة — الإصدار 2026.11.03-8
    - الصفحة الرئيسية: الشبكة أولًا (حتى لا تُعرض بيانات قديمة وأنت متصل)، والنسخة المحفوظة فقط عند انقطاع الإنترنت.
    - الأيقونات والخطوط: من الذاكرة أولًا. */
-const VERSION = '2026.11.03-1740';
+const VERSION = '2026.11.03-8';
 const CACHE = 'shawa-blood-' + VERSION;
 const CORE = ['./', './index.html', './offline.html', './manifest.webmanifest', './icons/logo.svg', './icons/icon-192.png', './icons/icon-512.png', './icons/apple-touch-icon.png'];
 self.addEventListener('install', e => { e.waitUntil(caches.open(CACHE).then(c => c.addAll(CORE))); });
