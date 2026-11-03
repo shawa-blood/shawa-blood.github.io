@@ -411,7 +411,12 @@ textarea.inp{min-height:88px;resize:vertical}
   <section class="sec js-only" id="addSec" aria-labelledby="addTitle">
     <h2 class="sec-h" id="addTitle" tabindex="-1">كن سببًا في إنقاذ حياة</h2>
     <p class="sec-p">سجّل بياناتك وساهم في خدمة أهالي قرية شاوة.</p>
-    <div id="addFormWrap" class="card">
+    <div class="card" id="regCta">
+      <p style="margin:0 0 12px;line-height:1.8">سجّل اسمك ورقمك وفصيلة دمك في نموذج التسجيل الرسمي للدليل. بعد مراجعة التسجيل يُضاف اسمك إلى الدليل ويظهر لكل الزوار.</p>
+      <a class="btn pri big" id="regFormBtn" style="text-decoration:none" href="https://docs.google.com/forms/d/e/1FAIpQLSc4YMgxUG8rmGSDx4twGH21Bd5pzdRuiRFS9sjpFK1qLvyVhQ/viewform" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-user-plus"/></svg>سجّل الآن في نموذج التبرع</a>
+      <p class="help" style="margin-top:10px">يفتح نموذج Google. تاريخ الميلاد يُستخدم للمراجعة فقط ولا يُنشر، ورقمك يظهر في الدليل كزر اتصال فقط.</p>
+    </div>
+    <div id="addFormWrap" class="card" hidden>
       <div class="alert info"><b>يُحفظ التسجيل على هذا الجهاز فقط.</b> لا يُرسل تلقائيًا إلى مسؤول الدليل ولا يظهر لبقية الزوار. بعد الحفظ يمكنك إرسال بياناتك للمنسّق ليعتمدها.</div>
       <form id="addForm" novalidate>
         <div class="field">
@@ -503,7 +508,7 @@ textarea.inp{min-height:88px;resize:vertical}
         <div class="grid2" style="margin-top:8px"><button class="btn danger-solid" type="button" id="clrConfirm" disabled>تأكيد المسح</button><button class="btn" type="button" id="clrCancel">إلغاء</button></div>
       </div>
     </div>
-    <p class="foot">دليل فصائل دم قرية شاوة · الإصدار <span id="ver">2026.11.03-6</span> · <span id="buildNote"></span></p>
+    <p class="foot">دليل فصائل دم قرية شاوة · الإصدار <span id="ver">2026.11.03-7</span> · <span id="buildNote"></span></p>
   </section>
 </main>
 
@@ -590,7 +595,7 @@ textarea.inp{min-height:88px;resize:vertical}
 <script>
 (function(){
 'use strict';
-var VERSION='2026.11.03-6';
+var VERSION='2026.11.03-7';
 var PUBLIC_URL='https://shawa-blood.github.io/';
 var GROUPS=['O+','O-','A+','A-','B+','B-','AB+','AB-'];
 var PAGE=30;
